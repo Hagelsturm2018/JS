@@ -1307,18 +1307,50 @@ h1, h2, h3, h4, h5,
     color: #777; }
 
 .single-content h1 {
-  font-size: 2rem;
-  color: #000; }
+  color: #000;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size: 26px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 26px; }
+
+  .single-content h2 {
+  color: #000;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 2; }
+    
+.single-conten h3 { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 15px; }
 
 .single-content {
-  color: black;
-  font-size: 1.2rem; }
+  color: #373D3F;
+ font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+ font-size: 16px;
+ font-style: normal;
+ font-variant: normal;
+ font-weight: 400;
+ line-height: 1.7; } 
+
+.single-content il{
+  display: inline-block;
+  text-align: left;
+  list-style: inside;
+}
 
 blockquote {
   margin: 4rem 0;
   padding: 4rem 4rem;
   border-left: 4px solid black;
   position: relative;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; 
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px; 
   }
 
 .banner {
