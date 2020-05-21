@@ -1297,7 +1297,7 @@ h1, h2, h3, h4, h5,
   font-size: .9rem; }
 
 footer {
-  background: #f1f1f1;
+  background: #fff;
   padding: 90px 0;
 }
 
@@ -1495,14 +1495,59 @@ blockquote {
   }
 
 .hero-image {
-    background-image: url("/w3images/photographer.jpg");
+    background-image: url("../jannik-crop.jp2");
     background-color: #cccccc;
-    height: 500px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
+
+  .container-hero{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+
+
+  .container h1 span {
+    border: 10px solid white;
+    padding: 6px 14px;
+  }
+
+  .phys {
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+    text-shadow: 0 0 10px black;
+  }
+
+  .btn-me{
+    position: relative;
+    border: 0;
+    border-radius: 60%;
+    padding: 15px 25px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: #8bc34a;
+    font-size: 20px;
+  }
+
+ 
+  
+  .btn:hover{
+    opacity: 0.8;
+    color: #313131
+    }
   
   .hero-text {
     text-align: center;
