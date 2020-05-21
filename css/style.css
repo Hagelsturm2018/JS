@@ -1169,8 +1169,15 @@ h1, h2, h3, h4, h5,
     background-size: 100%;
     background-repeat: no-repeat;
   }
+
+  .post-entry-2 .thumbnail-c {
+    background: 50% 50% no-repeat;
+    height: 100px;
+    width: 100%;
+  }
+
   .post-entry-2 .contents {
-    width: 70%;
+    width: 100%;
     padding: 10px 20px; }
     .post-entry-2 .contents h2 {
       font-size: 15px; }
