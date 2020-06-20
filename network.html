@@ -349,7 +349,20 @@
 
         <div class="footer-center">
           <h2>Über mich</h2>
-          <p>Mein Name ist Jannik Schilling. Ich bin 15 Jahre alt und bin Physik-Student an der Uni Hamburg.</p>
+          <p>Hallo, mein Name ist Jannik Schilling. Ich bin ein <script>
+              var date=new Date();
+              var y = date.getFullYear();
+              var m = date.getMonth();
+              var d = date.getDate();
+              var a = 0;
+              if (m>=7 && d>=17) {
+                a=y-2004
+              }else {
+                a=y-2004-1
+              }
+            document.write(a);
+            </script>-jähriger "Junior-Student" im Fachbereich Physik an der Uni Hamburg. In interessiere ich mich für Politik, Geschichte, Philosophie, klassische Herrenmode und Wirtschaft. In meiner Freizeit spiele ich Schlagzeuge, tanze und programmiere gerne.</p>
+
           
           <div>
             <p><i class="fas fa-map-marker"></i>

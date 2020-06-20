@@ -1512,6 +1512,13 @@ footer {
   width: 90%;
 }
 
+
+@media screen and (max-width: 960px) {
+  .logo {
+    width: 50%;
+  }
+}
+
 .social-media{
   margin: 20px 0;
 } 
@@ -1525,7 +1532,7 @@ footer {
   transition: .3s linear;
 }
 
-.social media a:hover{
+.social-media a:hover{
   color: #fc5c65;
 }
 
@@ -1613,4 +1620,16 @@ footer {
 
 h2 {
   color: #282828;
+}
+
+h2 a.aboutlink {
+  color: #282828;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+h2 a.aboutlink:hover{
+  color: #fc5c65;
 }

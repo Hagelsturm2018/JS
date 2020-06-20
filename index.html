@@ -127,11 +127,27 @@
         <div class="half-post-entry d-block d-lg-flex bg-light">
           <div class="img-bg" style="background-image: url('tafel.jpg')"></div>
           <div class="contents">
-            <h2><a href="about.html">Wer ist Jannik Schilling?</a></h2>
-            <p>Schule und Uni gleichzeitig? Das geht doch gar nicht?!</p>
-            <p>Doch, wie ich als Juniorstudent an der Universität Hamburg erfahren habe.</p>
-            <p>Ich bin ein engagierter und interessiert Student und bin immer auf der Suche nach neuen Erfahrungen und neuen Herausforderungen. </p>
-
+            <h2><a href="about.html" class="aboutlink">Wer ist Jannik Schilling?</a></h2>
+            <p>Hallo, mein Name ist Jannik Schilling. Ich bin ein <script>
+              var date=new Date();
+              var y = date.getFullYear();
+              var m = date.getMonth();
+              var d = date.getDate();
+              var a = 0;
+              if (m>=7 && d>=17) {
+                a=y-2004
+              }else {
+                a=y-2004-1
+              }
+            document.write(a);
+            </script>-jähriger "Junior-Student" im Fachbereich Physik an der Uni Hamburg. In interessiere ich mich für Politik, Geschichte, Philosophie, klassische Herrenmode und Wirtschaft. In meiner Freizeit spiele ich Schlagzeuge, tanze und programmiere gerne.</p>
+            <p>Auf dieser Website finden Sie Informationen über mich, über das tagesaktuelle Geschehen und Wirtschaft.</p>
+            <p>Sie wollen mich Kontaktieren? Schreiben Sie mehr gerne eine Nachricht über einen der folgenden Kanäle.</p>
+            <div class="social-media">
+              <a href="https://www.linkedin.com/in/jannik-schilling/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.xing.com/profile/Jannik_Schilling7/"><i class="fab fa-xing"></i></a>
+              <a href="mailto:Jannik@Schilling.land"><i class="fas fa-envelope"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -140,9 +156,8 @@
     </header>
 
     <div class="site-section py-0">
-
+      <h1 style="padding-left: 10%">Mein Blog</h1>
       <div class="owl-carousel hero-slide owl-style">
-
         <div class="site-section">
           <div class="container">
             <div class="half-post-entry d-block d-lg-flex bg-light">
@@ -381,18 +396,30 @@
           </p>
 
           <p class="footer-company-name"> &copy;<script>document.write(new Date().getFullYear());</script> Jannik Schilling | All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+        
         </div>
 
         <div class="footer-center">
           <h2>Über mich</h2>
-          <p>Mein Name ist Jannik Schilling. Ich bin 15 Jahre alt und bin Physik-Student an der Uni Hamburg.</p>
-          
+          <p>Hallo, mein Name ist Jannik Schilling. Ich bin ein <script>
+              var date=new Date();
+              var y = date.getFullYear();
+              var m = date.getMonth();
+              var d = date.getDate();
+              var a = 0;
+              if (m>=7 && d>=17) {
+                a=y-2004
+              }else {
+                a=y-2004-1
+              }
+            document.write(a);
+            </script>-jähriger "Junior-Student" im Fachbereich Physik an der Uni Hamburg. In interessiere ich mich für Politik, Geschichte, Philosophie, klassische Herrenmode und Wirtschaft. In meiner Freizeit spiele ich Schlagzeuge, tanze und programmiere gerne.</p>
+
+          <!--
           <div>
             <p><i class="fas fa-map-marker"></i>
-            Espluguesring 23,
-              22926 Ahrensburg</p>
+            Schleswig-Holstein</p>
           </div>
-
           <div>
             <p><i class="fa fa-phone"></i>
             <a href="tel:015233765747">+49 1523 3765747</a></p>
@@ -400,20 +427,23 @@
           <div>
             <p><i class="fas fa-envelope"></i>
             <a href="mailto:Jannik@Schilling.land">Jannik@Schilling.land</a></p>
-          </div>
+          </div>-->
 
           <div class="social-media">
             <a href="https://www.linkedin.com/in/jannik-schilling/"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://www.xing.com/profile/Jannik_Schilling7/"><i class="fab fa-xing"></i></a>
+            <a href="mailto:Jannik@Schilling.land"><i class="fas fa-envelope"></i></a>
+            <a href="tel:015233765747"><i class="fa fa-phone"></i></a>
           </div>
         </div>
 
         <div class="footer-right">
             <h2>Newsletter abonnieren</h2>
             <p>Sie möchten weiterhin tiefgehende politische Analysen, unternehmerische Artikel und ökonomische News erhalten? Dann abonnieren Sie doch gerne meinen Newsletter!</p>
-            <form  data-netlify="true" class="newsletter-form">
+            <form  data-netlify="true" class="d-flex">
               <input type="text" id="mail" class="txtb" placeholder="E-Mail eingeben" value="">
-              <input type="submit" id="submit" class="btn-sub">
+              <button type="submit" class="btn btn-secondary" ><span class="icon-paper-plane"></span></button>
+              <!--<input type="submit" id="submit" class="btn-sub">-->
             </form>
         </div>
       </div>
