@@ -895,6 +895,10 @@ a {
   color: #282828;
 }
 
+.section-title .a:hover {
+  color: #fc5c65;
+}
+
 h2.tit{
   color:#282828;
 }
@@ -1690,5 +1694,15 @@ h2 a.aboutlink {
 }
 
 h2 a.aboutlink:hover{
+  color: #fc5c65;
+}
+
+h2 a.sec-tit {
+  color: #282828;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+h2 a.sec-tit:hover{
   color: #fc5c65;
 }
