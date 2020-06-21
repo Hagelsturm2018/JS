@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
@@ -124,7 +128,7 @@
 
     <div class="site-section">
       <div class="container">
-        <div class="half-post-entry d-block d-lg-flex bg-light">
+        <div class="half-post-entry d-block d-lg-flex bg-light" >
           <div class="img-bg" style="background-image: url('tafel.jpg')"></div>
           <div class="contents">
             <h2><a href="about.html" class="aboutlink">Wer ist Jannik Schilling?</a></h2>
@@ -152,6 +156,34 @@
           </div>
         </div>
       </div>
+    </div>
+    
+    <div class="site-section">
+      <div class="middle">
+        <div class="counting-sec">
+          <div class="inner-width">
+            <div class="col">
+              <i class="fas fa-briefcase"></i>
+              <div class="num">1</div>
+              Praktikum
+            </div>
+            <div class="col">
+              <i class="fas fa-birthday-cake"></i>
+              <div class="num">15</div>
+              Jahre alt
+            </div>
+            <div class="col">
+              <i class="fab fa-linkedin-in"></i>
+              <div class="num">1500</div>
+              LinkedIn Kontakte
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <script type="text/javascript">
+        $(".num").counterUp({delay:10,time:1000});
+      </script>
     </div>
 
     </header>
@@ -353,6 +385,7 @@
       </div>
     </div>-->
 
+
     <!-- <div class="site-section subscribe bg-light">
       <div class="container">
         <form data-netlify="true" method="POST" action="success.html" class="row align-items-center" novalidate="false">
@@ -477,9 +510,8 @@
   <script src="js/jquery.sticky.js"></script>
   <script src="js/jquery.mb.YTPlayer.min.js"></script>
 
-
-
   <script src="js/main.js"></script>
+
 
 </body>
 

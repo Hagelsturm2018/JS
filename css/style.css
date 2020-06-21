@@ -1715,3 +1715,50 @@ a.aboutlink {
 a.aboutlink:hover{
   color: #fc5c65;
 }
+
+
+
+/* NUMBER COUNT UP SECTION */
+
+.middle {
+  position: relative;
+  width: 100%;
+  margin-bottom: 70px;
+  margin-top: -40px;
+}
+
+@media (min-width: 776px) {
+  .middle {
+    margin-top: -180px;
+  }
+}
+
+.counting-sec {
+  padding: 40px 0;
+  width: 100%;
+  background: #f8f9fa;
+} 
+
+.inner-width {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: #282828;
+  text-transform: uppercase;
+}
+
+.col i {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.num {
+  font-size: 40px;
+  margin: 20px 0;
+}
