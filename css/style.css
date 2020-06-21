@@ -1722,15 +1722,21 @@ a.aboutlink:hover{
 
 .middle {
   position: relative;
-  width: 100%;
+  width: 90%;
   margin-bottom: 30px;
   margin-top: -40px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 @media (min-width: 776px) {
   .middle {
     margin-top: -180px;
     margin-bottom: -70px;
+  }
+
+  .testimonial-container{
+    margin-bottom: -30px;
   }
 }
 
@@ -1767,12 +1773,15 @@ a.aboutlink:hover{
 /* Testimonial */
 
 .testimonial-container {
-  width: 100%;
+  width: 90%;
   background: #f8f9fa;
   padding: 40px;
   position: relative;
-  text-align: center;
+  text-align: left;
   margin-bottom: 120px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .client {
@@ -1782,8 +1791,8 @@ a.aboutlink:hover{
 }
 
 .client img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
   border: 3px solid #333;
   margin: 0 10px;
@@ -1799,4 +1808,18 @@ a.aboutlink:hover{
 
 .test-job {
  color: #333; 
+}
+
+.test-quote {
+  position: absolute;
+  top: -2pt;
+  left: 3pt;
+  font-size: 30pt;
+}
+
+.test-quote-end {
+  position: absolute;
+  bottom: 80pt;
+  right: 200pt;
+  font-size: 30pt;
 }
