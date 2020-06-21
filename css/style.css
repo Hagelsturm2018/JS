@@ -2,32 +2,13 @@
 html {
   overflow-x: hidden; }
 
-  :root{
-
-    /*      Theme colors        */
-    --text-gray: #3f4954;
-    --text-light : #686666da;
-    --bg-color: #0f0f0f;
-    --white: #ffffff;
-    --midnight: #104f55;
-
-    /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-
-    /*      theme font-family   */
-    --Abel: 'Abel', sans-serif;
-    --Anton: 'Anton', cursive;
-    --Josefin : 'Josefin', cursive;
-    --Lexend: 'Lexend', sans-serif;
-    --Livvic : 'Livvic', sans-serif;
-}
-
-
 body {
   line-height: 1.7;
   color: gray;
   font-weight: 300;
-  font-size: .9rem; }
+  font-size: .9rem;
+  font-family: 'Montserrat';
+}
 
 ::-moz-selection {
   background: #282828;
@@ -40,13 +21,15 @@ body {
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; }
-  a:hover {
-    text-decoration: none; }
+  transition: .3s all ease;
+}
 
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
-  font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+a:hover {
+  text-decoration: none;
+  color: #fc5c65;
+}
+
+
 
 .border-2 {
   border-width: 2px; }
@@ -55,7 +38,6 @@ h1, h2, h3, h4, h5,
     float: left;
     margin: 0;
     padding: 1.6rem 0.8rem 0 0;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 6.6rem;
     line-height: 4rem;
@@ -107,8 +89,7 @@ h1, h2, h3, h4, h5,
   background: #282828; }
 
 .site-section p{
-  font-size: 12pt;
-  font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+  font-size: 11pt;
 }
 
 .site-section {
@@ -219,6 +200,11 @@ h1, h2, h3, h4, h5,
 .overlap-to-top {
   margin-top: -150px; }
 
+ul {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .ul-check {
   margin-bottom: 50px; }
   .ul-check li {
@@ -320,7 +306,9 @@ h1, h2, h3, h4, h5,
   z-index: 1999;
   width: 80%;
   background: #fff;
-  font-family: "B612 Mono", monospace; }
+  font-weight: 900;
+  font-size: 16px;
+}
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid #f3f3f4 !important; }
   .site-navbar .site-navigation .site-menu {
@@ -1000,7 +988,10 @@ h2.tit:hover{
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: .2rem;
-  font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  float: right;
+  margin-top: 0;
+}
+
 
 .quote-form-wrap {
   background: #09162a;
@@ -1034,67 +1025,6 @@ h2.tit:hover{
   border-color: #282828;
   color: #fff; }
 
-.person {
-  position: relative; }
-  .person figure {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 30px; }
-  .person img {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease; }
-  .person .person-contents {
-    text-align: center; }
-    .person .person-contents h3 {
-      color: #282828; }
-    .person .person-contents .position {
-      color: #282828; }
-  .person:hover img {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05); }
-  .person .social {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    z-index: 2; }
-    .person .social a {
-      display: block;
-      margin-bottom: 10px;
-      width: 40px;
-      height: 40px;
-      background: #fff;
-      position: relative; }
-      .person .social a > span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
-      .person .social a:hover {
-        background: #282828;
-        color: #fff; }
-
-.testimonial img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 20px; }
-
-.testimonial blockquote p {
-  font-size: 20px;
-  color: #282828;
-  font-weight: 700; }
-
-.testimonial .client-name {
-  font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: #282828; }
 
 .blog-entry .img-link {
   display: block;
@@ -1156,7 +1086,9 @@ h2.tit:hover{
       color: #ccc; }
   .categories li.active a, .sidelink li.active a {
     color: #282828;
-    font-style: italic; }
+    font-style: italic;
+    font-weight: 600;
+  }
 
 
 .post-meta {
@@ -1367,7 +1299,6 @@ h2.tit:hover{
   font-size: .9rem; }
 
 
-
 .top-social a {
   color: #282828; }
   .top-social a:hover {
@@ -1375,27 +1306,31 @@ h2.tit:hover{
 
 .single-content h1 {
   color: #282828;
-  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
   font-size: 26px;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
   line-height: 26px; }
 
-  .single-content h2 {
+.single-content h2 {
   color: #282828;
-  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
   font-size: 22px;
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
-  line-height: 2; }
+  line-height: 2;
+}
     
-.single-conten h3 { font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: bold; line-height: 15px; }
+.single-conten h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 15px;
+}
 
 .single-content {
   color: #373D3F;
- font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
  font-size: 16px;
  font-style: normal;
  font-variant: normal;
@@ -1410,15 +1345,35 @@ h2.tit:hover{
 
 blockquote {
   margin: 4rem 0;
-  padding: 4rem 4rem;
-  border-left: 4px solid black;
+  padding: 1rem 4rem;
+  border-left: 4px solid #282828;
   position: relative;
-  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif; 
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
   line-height: 30px; 
   }
+
+
+h1.article-head {
+    color: #282828;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 1.24; }
+
+h1.blog-head {
+  color: #282828;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 36px;
+  padding-left: 5%;
+  margin-top: -20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 
 .banner {
     width: 100%;
@@ -1437,13 +1392,14 @@ blockquote {
     background-size: cover;
     position: relative;
     margin-bottom: 50px;
+    word-wrap: break-word;
   }
 
   .hero-text {
     font-size: 100px;
     color: #282828;
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1541,6 +1497,7 @@ footer {
   float: left;
   padding-left: 50px;
 }
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -1724,7 +1681,7 @@ a.aboutlink:hover{
   position: relative;
   width: 90%;
   margin-bottom: 30px;
-  margin-top: -40px;
+  margin-top: -80px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -1788,6 +1745,7 @@ a.aboutlink:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .client img {
@@ -1822,4 +1780,12 @@ a.aboutlink:hover{
   bottom: 80pt;
   right: 200pt;
   font-size: 30pt;
+}
+
+#more {
+  display: none;
+}
+
+#more-b {
+  display: none;
 }
