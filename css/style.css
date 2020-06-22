@@ -1261,7 +1261,7 @@ h2.tit:hover{
   line-height: 2;
 }
     
-.single-conten h3 {
+.single-content h3 {
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
@@ -1282,6 +1282,7 @@ h2.tit:hover{
   text-align: left;
   list-style: inside;
 }
+
 
 blockquote {
   margin: 4rem 0;
@@ -1314,7 +1315,7 @@ h1.blog-head {
 }
 
 h3.tit {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 h3 a.sec-tit {
@@ -1773,3 +1774,21 @@ a.aboutlink:hover{
   opacity: 1;
   pointer-events: all;
 }
+
+.p-in {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: .3s .3s;
+  will-change: opacity;
+}
+
+.p-in.appear {
+  transition-delay: 0s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* RESUME */
+
