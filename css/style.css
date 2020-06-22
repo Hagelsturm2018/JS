@@ -1535,11 +1535,11 @@ h3 a.sec-tit:hover{
 }
 /* ------------ FOOTER ----------- */
 footer {
-	background: #fff;
 	padding: 90px 0;
 }
 .footer-container {
-	width: 100%
+  width: 100%;
+  
 }
 .footer-right{
 	width: 33.33%;
@@ -1843,5 +1843,37 @@ a.aboutlink:hover{
 	opacity: 1;
 	pointer-events: all;
 }
-/* RESUME */
+/* SCROLL */
+
+
+#scrollUp {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  padding-top: 2px;
+  border-radius: 100%;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #282828;
+  color: white;
+  cursor: pointer;
+  margin: auto auto;
+  text-align: center;
+}
+
+#scrollUp:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  #scrollUp {
+    background-color: transparent;
+    color: #282828;
+    right: -7px;
+  }
+}
 
