@@ -1238,66 +1238,6 @@ h2.tit:hover{
   border-color: #282828;
   color: #fff; }
 
-.subscribe form .form-control {
-  margin-right: 10px;
-  height: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 30px;
-  border: none;
-  background: #fff;
-  border-bottom: 1px solid transparent;
-  border-bottom: 1px solid #ccc; }
-  .subscribe form .form-control:active, .subscribe form .form-control:focus {
-    border-bottom: 1px solid #ccc; }
-
-.subscribe form .btn {
-  border-radius: 30px;
-  background: #282828;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-color: #282828; }
-  .subscribe form .btn:hover {
-    background: #282828;
-    border-color: #282828; }
-
-.subscribe form h2 {
-  font-size: 1.2rem;
-  color: #282828; }
-
-.subscribe form p {
-  font-size: .9rem; }
-
-.search-form .form-control {
-  margin-right: 10px;
-  height: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 30px;
-  border: none;
-  background: #fff;
-  border-bottom: 1px solid transparent;
-  border-bottom: 1px solid #ccc; }
-  .search-form .form-control:active, .search-form .form-control:focus {
-    border-bottom: 1px solid #ccc; }
-
-.search-form .btn {
-  border-radius: 30px;
-  background: #282828;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-color: #282828; }
-  .search-form .btn:hover {
-    background: #282828;
-    border-color: #282828; }
-
-.search-form h2 {
-  font-size: 1.2rem;
-  color: #282828; }
-
-.search-form p {
-  font-size: .9rem; }
-
 
 .top-social a {
   color: #282828; }
@@ -1371,7 +1311,20 @@ h1.blog-head {
   padding-left: 5%;
   margin-top: -20px;
   margin-bottom: 60px;
-  text-align: center;
+}
+
+h3.tit {
+  font-size: 18px;
+}
+
+h3 a.sec-tit {
+  color: #282828;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+h3 a.sec-tit:hover{
+  color: #fc5c65;
 }
 
 
@@ -1654,8 +1607,13 @@ h2 a.aboutlink:hover{
   color: #fc5c65;
 }
 
+h2.tit{
+  font-size: 30px;
+}
+
 h2 a.sec-tit {
   color: #282828;
+  font-size: 30px;
   text-decoration: none;
   transition: .3s linear;
 }
@@ -1788,4 +1746,30 @@ a.aboutlink:hover{
 
 #more-b {
   display: none;
+}
+
+/* Fade in while Scrolling */ 
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 600ms ease-out;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.slide-in {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: .5s .5s;
+  will-change: opacity;
+}
+
+.slide-in.appear {
+  transition-delay: 0s;
+  opacity: 1;
+  pointer-events: all;
 }
